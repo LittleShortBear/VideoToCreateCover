@@ -17,7 +17,8 @@ else:
     base_path = Path(__file__).resolve().parent
 
 # 2. 连接路径：使用 / 运算符连接 Path 对象和字符串
-# 注意：这要求你在 auto-py-to-exe 中将 DENGB.TTF 打包到 _internal 目录下
+# 注意：这要求你在 auto-py-to-exe 中将 DENGB.TTF 打包到 _internal 目录下 （单目录）
+# 下面是单文件打包的路径
 DEFAULT_FONT_PATH = str(base_path  / "DENGB.TTF")
 
 # DEFAULT_FONT_PATH = str(Path("GetVideoCover\DENGB.TTF").resolve())
@@ -433,4 +434,5 @@ if __name__ == "__main__":
     
     app = ConfigApp(root)
     
+
     root.mainloop()
